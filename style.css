@@ -1,0 +1,276 @@
+body {
+  background-color: rgba(244, 227, 215, 0.6);
+}
+
+.title {
+  font-family: "Moirai One", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  color: #ff6f61;
+
+  text-align: center; /* Centers the text */
+  background: linear-gradient(
+    to right,
+    #ff6f61,
+    #ffc857,
+    #fad4d8
+  ); /* Gradient colors */
+  -webkit-background-clip: text; /* Clips the background to the text */
+  -webkit-text-fill-color: transparent;
+}
+
+#topNav {
+  background-color: #242424;
+  width: 100.5%;
+  padding: 0.5%;
+  display: flex; /* Puts logo and title in a row */
+  align-items: center; /* Aligns them vertically */
+  gap: 10px; /* Adds space between logo and title */
+  margin-left: -1%;
+  margin-top: -1%;
+}
+
+#logo {
+  width: 3.5%;
+}
+
+#par {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
+  color: #242424;
+  text-align: center;
+}
+
+.drink {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.1rem;
+  color: #242424;
+  text-align: center;
+}
+
+#drinkPic {
+  width: 20%;
+  margin-left: 40%;
+  border-style: none;
+  border-radius: 10px;
+}
+
+.desYellow {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #ffc857;
+  text-align: center;
+}
+
+.desOrng {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #ff6f61;
+  text-align: center;
+}
+
+#drinkPicRec {
+  width: 15%;
+  border-style: none;
+  border-radius: 10px;
+}
+
+.imgCont {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.desOrngRec {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #ff6f61;
+  text-align: left;
+}
+
+.recipe {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: #242424;
+  text-align: left;
+}
+
+.description {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: #ffc857;
+  text-align: left;
+}
+
+.imgCont {
+  position: relative;
+  display: inline-block;
+  margin-left: 11%;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%; /* Ensures the image is responsive */
+  height: auto;
+}
+
+.circle-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #5ed4d2;
+  border: solid;
+  margin-top: -50px;
+  margin-left: 55%;
+  z-index: 9999;
+  cursor: pointer;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-color: rgba(244, 227, 215, 0.6);
+}
+
+.circle-button:hover {
+  background-color: #ff6f61;
+}
+
+/* Existing styles remain unchanged */
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  body {
+    background-color: rgba(
+      244,
+      227,
+      215,
+      0.8
+    ); /* Adjusted transparency for better visibility */
+  }
+
+  .title {
+    font-size: 1.4rem; /* Reduced font size for smaller screens */
+    text-align: center; /* Keeps the title centered */
+    padding: 0; /* Add spacing to ensure readability */
+  }
+
+  #topNav {
+    padding: 5%; /* Increase padding for spacing */
+    gap: 5px; /* Reduce spacing between logo and title */
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 97%;
+    position: sticky;
+    top: 0;
+  }
+
+  a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Makes the link inherit the parent's text color */
+    font-family: inherit; /* Ensures it matches the surrounding text style */
+    font-weight: normal;
+  }
+
+  #logo {
+    width: 10%; /* Adjust logo size for smaller screens */
+  }
+
+  #par {
+    font-size: 2rem; /* Reduce paragraph text size */
+  }
+  .form {
+    z-index: 99999999;
+    background-color: rgb(
+      246,
+      211,
+      140
+    ); /* Alpha set to 0.4 for transparency */
+    position: fixed;
+    margin-top: -35%;
+    width: 90%;
+    height: 35%;
+    align-items: center;
+    border-radius: 25px;
+
+    border: solid;
+    border-color: #ff6f61;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 2.5%;
+  }
+
+  .submit-button {
+    font-family: "Poiret One", sans-serif; /* Matches your theme font */
+    font-weight: 700; /* Bold for emphasis */
+    font-style: normal;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 200, 87, 0.6),
+      rgba(255, 111, 97, 0.8)
+    ); /* Gradient with transparency from your colors */
+    border: none; /* Removes default borders */
+    border-radius: 12px; /* Smooth rounded corners */
+    padding: 12px 24px; /* Comfortable button size */
+    color: #ffffff; /* White text for contrast */
+    font-size: 1.2rem; /* Scales nicely */
+    text-transform: uppercase; /* Ensures a bold, clean look */
+    cursor: pointer; /* Shows it's clickable */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for a floating effect */
+    transition: all 0.3s ease; /* Smooth hover transition */
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .drink {
+    font-size: 1.8rem; /* Reduce font size */
+  }
+
+  #drinkPic {
+    width: 90%; /* Adjust image size */
+    margin-left: 5%; /* Center-align the image */
+  }
+
+  #drinkPicRec {
+    width: 50%; /* Adjust recommended drink image size */
+  }
+
+  .circle-button {
+    width: 60px; /* Smaller button for smaller screens */
+    height: 60px;
+    margin-left: 65%; /* Adjust positioning */
+    font-size: 0.9rem; /* Reduce font size */
+  }
+
+  .description,
+  .recipe {
+    font-size: 1rem; /* Reduce font size for descriptions and recipes */
+  }
+
+  .imgCont {
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+  }
+
+  .image-container img {
+    width: 100%; /* Scale images to fit mobile screens */
+    height: auto;
+  }
+}
